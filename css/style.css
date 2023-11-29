@@ -1,77 +1,166 @@
+/*Rules*/
 @charset "UTF-8";
 
+:root {
+    /*Variables*/
+    --cor0: #ffffff;
+    --cor1: #b4ccda;
+    --cor2: #86aabd;
+    --cor3: #46728a;
+    --cor4: #1b4257;
+    --cor5: #09354b;
+    --cor6: #000000;
+}
+
 /* Corpo | Geral */
+
 * {
+    /*Box model stuff*/
     margin: 0;
     padding: 0;
+    /*Typography stuff*/
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+    /*Miscellaneous*/
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: #f4f4f4;
+    /*Box model stuff*/
+    background-color: var(--cor1)
 }
 
 /* Cabeçalho da página */
+
 header {
+    /*Box model stuff*/
     padding: 10px;
-    background-color: #333;
+    background-color: var(--cor5);
+    /*Typography stuff*/
     text-align: center;
-    color: #fff;
+    color: var(--cor0);
+}
+
+header p {
+    /*Box model stuff*/
+    margin-bottom: 20px;
+}
+
+img#logo {
+    /*Box model stuff*/
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 span#burguer {
+    /*Display stuff*/
     display: inline-block;
+    /*Box model stuff*/
     width: 24px;
     height: 24px;
     padding: 10px;
+    /*Typography stuff*/
     text-align: center;
-    color: white;
+    color: var(--cor0);
+    /*Miscellaneous*/
     cursor: pointer;
 }
 
 span#burguer:hover {
-    color: greenyellow;
+    /*Typography stuff*/
+    color: var(--cor3);
 }
 
 menu {
+    /*Display stuff*/
     display: none;
+    /*Typography stuff*/
     text-align: center;
+    /*Miscellaneous*/
     overflow: hidden;
 }
 
 menu a {
+    /*Display stuff*/
     display: block;
+    /*Box model stuff*/
     padding: 14px 16px;
+    border-radius: 10px;
+    /*Typography stuff*/
     text-align: center;
     text-decoration: none;
-    color: #fff;
+    color: var(--cor0);
 }
 
 menu a:hover {
-    background-color: #ddd;
-    color: #333;
+    /*Box model stuff*/
+    background-color: var(--cor0);
+    /*Typography stuff*/
+    color: var(--cor5);
 }
 
 menu ul {
+    /*Miscellaneous*/
     list-style-type: none;
 }
 
 /* Conteúdo da página */
+
+main {
+    /*Typography stuff*/
+    color: var(--cor5);
+}
+
+section#intro h2 {
+    /*Box model stuff*/
+    margin-bottom: 20px;
+}
+
 section {
+    /*Box model stuff*/
     padding: 20px;
+    /*Typography stuff*/
     text-align: center;
 }
 
-section#servicos ul {
-    list-style-type: none;
+section#servicos p {
+    /*Box model stuff*/
+    margin: 10px 0px 20px 0px;
+}
+
+section#servicos img {
+    /*Box model stuff*/
+    width: 400px;
+    max-width: 100%;
+    height: 200px;
+    border: 3px solid var(--cor4);
+    border-radius: 10px;
+    /*Manipulations stuff*/
+    transition: transform 0.3s;
+}
+
+section#servicos img:hover {
+    /*Manipulations stuff*/
+    transform: scale(1.05);
+}
+
+section#contato h2 {
+    /*Box model stuff*/
+    margin-bottom: 20px;
 }
 
 /* Rodapé da página */
+
 footer {
+    /*Box model stuff*/
     padding: 10px;
-    background-color: #333;
+    background-color: var(--cor5);
+    /*Typography stuff*/
     text-align: center;
-    color: #fff;
+    color: var(--cor0);
 }
 
 /* Adicionando regras de estilo para telas menores (dispositivos móveis) */

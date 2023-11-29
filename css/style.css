@@ -1,52 +1,91 @@
-body {
-    font-family: Arial, sans-serif;
+@charset "UTF-8";
+
+/* Corpo | Geral */
+* {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
     background-color: #f4f4f4;
 }
 
+/* Cabeçalho da página */
 header {
+    padding: 10px;
     background-color: #333;
+    text-align: center;
+    color: #fff;
+}
+
+span#burguer {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
     padding: 10px;
     text-align: center;
-    color: #fff;
+    color: white;
+    cursor: pointer;
 }
 
-nav {
-    background-color: #444;
+span#burguer:hover {
+    color: greenyellow;
+}
+
+menu {
+    display: none;
+    text-align: center;
     overflow: hidden;
-    text-align: center;
 }
 
-nav a {
+menu a {
     display: block;
-    color: #fff;
-    text-align: center;
     padding: 14px 16px;
+    text-align: center;
     text-decoration: none;
+    color: #fff;
 }
 
-nav a:hover {
+menu a:hover {
     background-color: #ddd;
     color: #333;
 }
 
+menu ul {
+    list-style-type: none;
+}
+
+/* Conteúdo da página */
 section {
     padding: 20px;
     text-align: center;
 }
 
+section#servicos ul {
+    list-style-type: none;
+}
+
+/* Rodapé da página */
 footer {
-    background-color: #333;
     padding: 10px;
+    background-color: #333;
     text-align: center;
     color: #fff;
 }
 
 /* Adicionando regras de estilo para telas menores (dispositivos móveis) */
-@media screen and (max-width: 600px) {
-    nav a {
-        width: 100%;
-        box-sizing: border-box;
+@media screen and (min-width: 768px) {
+    span#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+        text-align: center;
+    }
+
+    menu>ul>li {
+        display: inline-block;
     }
 }

@@ -20,6 +20,8 @@
     padding: 0;
     /*Typography stuff*/
     font-family: Arial, Helvetica, sans-serif;
+    /*Miscellaneous*/
+    cursor: url('../custom/cursor.cur'), auto;
 }
 
 html {
@@ -93,6 +95,8 @@ menu a {
     text-align: center;
     text-decoration: none;
     color: var(--cor0);
+    /*Miscellaneous*/
+    cursor: url('../custom/pointer.cur'), auto;
 }
 
 menu a:hover {
@@ -140,6 +144,8 @@ section#servicos img {
     border-radius: 10px;
     /*Manipulations stuff*/
     transition: transform 0.3s;
+    /*Miscellaneous*/
+    cursor: url('../custom/pointer.cur'), auto;
 }
 
 section#servicos img:hover {
